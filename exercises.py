@@ -94,13 +94,13 @@ def list_home_town_items():
     home_town = {
         "city": "Austin",
         "state": "Texas",
-        "population": "974,447"
+        "population": "974,447",
     }
 
     home_town_items = []
 
-    for key in home_town: 
-        home_town_items.append(f"{key} = {home_town[key]}")
+    for key, val in home_town.items(): 
+        home_town_items.append(f"{key} = {val}")
 
     return home_town_items
 
